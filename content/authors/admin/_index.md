@@ -50,15 +50,15 @@ interests:
   - Deep Learning
 
 education:
-  - area: MEng Civil Engineering
-    institution: Imperial College London
+  - institution: Imperial College London
+    area: MEng Civil Engineering
     icon: ""
     date_start: '2021-10-01'
     date_end: '2027-07-01'
     summary: |
       Relevant coursework: Corporate Finance, Computational Methods, Statistics, Mathematics, Machine Learning, Fluid Mechanics, Structural Mechanics, Environmental Engineering, Project Management.
-  - area: High School Diploma
-    institution: Shenzhen International School of Education
+  - institution: Shenzhen International School of Education
+    area: High School Diploma
     icon: ""
     date_start: 2019-08-14
     date_end: 2021-06-17
@@ -68,16 +68,16 @@ education:
 
 work:
 
-  - position: Consultant
-    company_name: WorldQuant
+  - company_name: WorldQuant
+    position: Consultant
     company_url: 'https://www.worldquant.com'
     icon: ''
     date_start: 2025-11-18
     date_end: ''
     summary: |
       Quantitative research and consultancy with a focus on systematic strategies.
-  - position: Data Analyst Intern
-    company_name: JLL (Jones Lang LaSalle)
+  - company_name: JLL (Jones Lang LaSalle)
+    position: Data Analyst Intern
     company_url: 'https://www.jll.co.uk/'
     icon: ''
     date_start: '2024-12-01'
@@ -88,8 +88,8 @@ work:
       - Authored the Annual ShenZhen Office Market Report (30+ pages).
       - Developed Python-based web crawlers to collect 20,000+ data points with Redis for incremental updates.
       - Built automated data cleaning tools, correcting 700+ inaccuracies in a 13,000+ record database.
-  - position: Construction Manager & Surveying Team Lead
-    company_name: Constructionarium
+  - company_name: Constructionarium
+    position: Construction Manager & Surveying Team Lead
     company_url: ''
     icon: ''
     date_start: '2024-06-01'
@@ -98,8 +98,8 @@ work:
       - Led a team of 12 to construct a footbridge from blueprint design to on-site execution.
       - Ran technical training on total station operation and surveying workflows.
       - Achieved the lowest error margin (<0.001%) among 11 peer groups and completed the project 14% ahead of schedule.
-  - position: Event Operations Volunteer
-    company_name: NBA International Game (ShenZhen)
+  - company_name: NBA International Game (ShenZhen)
+    position: Event Operations Volunteer
     company_url: ''
     icon: ''
     date_start: '2018-10-01'
