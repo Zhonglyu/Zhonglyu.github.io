@@ -43,11 +43,7 @@ profiles:
 
 
 
-interests:
-  - Finance
-  - Quantitative Research
-  - Machine Learning
-  - Deep Learning
+interests: []
 
 education:
   - institution: Imperial College London
@@ -139,31 +135,34 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: CFA® Level I Passed
-    url: https://www.cfainstitute.org/
+  # --- 证书 Certificates ---
+  - title: Chartered Financial Analyst (CFA®)
+    awarder: Level I Passed
     date: '2025-08-01'
-    awarder: CFA Institute
+    url: https://www.cfainstitute.org/
     icon: hero/academic-cap
     summary: |
-      Passed the Level I CFA exam, covering Equity Investments, Fixed Income, Derivatives, and Portfolio Management.
-  - title: FRM® Level I Passed
-    url: https://www.garp.org/
+      Passed CFA® Level I. Core coverage: Financial Statement Analysis, Economics, Portfolio Management, Equity Investments, Fixed Income, Derivatives.
+  - title: Financial Risk Manager (FRM®)
+    awarder: Level I Passed
     date: '2025-08-01'
-    awarder: GARP
+    url: https://www.garp.org/
     icon: hero/chart-bar
     summary: |
-      Passed the Level I FRM exam, focusing on Quantitative Analysis, Financial Markets, and Risk Models.
-  - title: WorldQuant Challenge - Gold Level
-    url: https://www.worldquant.com
+      Passed FRM® Level I. Core coverage: Quantitative Analysis, Financial Markets and Products, Valuation and Risk Models.
+
+  # --- 原有的奖项 Awards ---
+  - title: WorldQuant Challenge
+    awarder: Gold Level
     date: '2025-01-01'
-    awarder: WorldQuant
+    url: https://www.worldquant.com
     icon: hero/trophy
     summary: |
       Achieved Gold Level status in the WorldQuant International Quant Championship.
   - title: UK Chinese University Basketball Championship
-    url: ''
+    awarder: Runner-up
     date: '2023-01-01'
-    awarder: UK Chinese Students Sports Federation
+    url: ''
     icon: person-simple-walk
     summary: |
       Runner-up in the championship.
