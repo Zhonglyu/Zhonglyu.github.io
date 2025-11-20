@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Alex Johnson
+title: Zhong Lyu
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Zhong
+last_name: Lyu
 
 # Pronouns (optional)
 pronouns: he/him
 
 # Status emoji
 status:
-  icon: 🚀
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,83 +23,76 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Student At Imperial College London
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Imperial College London
+    url: https://www.imperial.ac.uk
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:zhong.lyu02@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
+    url: https://github.com/Zhonglyu
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://www.linkedin.com/in/zhonglyu
+
+
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Finance
+  - Quantitative Research
+  - Machine Learning
+  - Deep Learning
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: MEng Civil Engineering
+    institution: Imperial College London
     icon: ""
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+    date_start: 2021-10-02
+    date_end: 2027-06-25
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+      Corporate Finance, Computational Methods, Statistics,Mathematics, MachineLearning, Fluid Mechanics,
+      StructuralMechanics, Environmental Engineering, ProjectManagement
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com/thesis.pdf'
+  - area: High School Diploma
+    institution: Shenzhen International School of Education
     icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+    date_start: 2019-08-14
+    date_end: 2021-06-17
     summary: |
-      GPA: 4.0/4.0
+      Mathematics, Physics, Further Mathematics, Economics
 
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
-    icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
-    summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
+
+  - position: Consultant
+    company_name: WorldQuant
     company_url: 'https://ai.meta.com/'
     icon: ''
-    date_start: 2020-01-01
+    date_start: 2025-11-18
     date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
+    summary: ''
+  - position: Data Analyst Intern
+    company_name: JLL - Technology
+    company_url: 'https://ai.meta.com/'
     icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+    date_start: 2024-12-16
+    date_end: '2025-03-28'
+    summary: |-
+      • In-depth underwriting on 34 commercial assets, including detailed rent roll underwriting on more than 200 tenants and business plan projections on each of the downside/upside/base case scenarios
+      • Led commercial, financial, legal and technical due diligence, including detailed tenant-by-tenant lease review, floor plate and structural specification assessment, as well as company-level tax and legal analysis
+      • Over 30 pages Annual ShenZhen Office Market Report, covering a recap of the 5-year market trend as well as the firm’s 2025 house view on the office sector
+      • Developed Python-based web crawlers to collect 20,000+ data points, and implemented Redis for incremental weekly updates and real-time monitoring
+      • Developed automated programme for data cleaning / cross-checking for commercial asset monitoring; identified limitations in token-based classification and independently proposed a geo-coordinate cross verification improvement. Programme implemented on the company database (over 13,000+ datapoints, 700+ corrected)
+
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -137,9 +130,9 @@ skills:
 
 languages:
   - name: English
+    percent: 75
+  - name: Mandarin
     percent: 100
-  - name: Spanish
-    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -169,4 +162,4 @@ awards:
       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+Quantitatively driven Imperial College MEng candidate and recently new WorldQuant Consultant with strong exposure to systematic research and data-driven investment analysis. Passed CFA Level I and FRM Level I, with practical experience building scalable Python data pipelines, automated quality-control systems, and multi-factor analytics during a data analyst role at JLL. Skilled in Python, SQL, and statistical modelling, with a solid foundation in machine learning, financial modelling, and quantitative methods. Brings a rigorous analytical approach to developing research insights and supporting systematic investment and risk strategies.
