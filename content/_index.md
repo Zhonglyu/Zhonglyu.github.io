@@ -12,7 +12,11 @@ sections:
     content:
       username: admin
       text: |
-        I am an MEng candidate at Imperial College London and a Consultant at WorldQuant. I focus on quantitative research, data-driven investment strategies, and robust engineering practices. Please reach out to collaborate.
+        I am an MEng candidate at Imperial College London and a Consultant at WorldQuant.
+
+        With a strong foundation in mathematics and machine learning, I have passed CFA Level I and FRM Level I. My passion lies in applying data-driven approaches to financial markets and systematic trading strategies.
+
+        Please reach out to collaborate.
       button:
         text: Download CV
         url: uploads/resume.pdf
