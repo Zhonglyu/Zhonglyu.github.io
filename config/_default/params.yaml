@@ -14,7 +14,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'Personal website of Zhong Lyu - MEng Candidate at Imperial College London & Consultant at WorldQuant.'
+    description: 'Personal website of Zhong Lyu - MEng Candidate at Imperial College London'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -32,9 +32,9 @@ header:
     enable: true
     block: 'navbar'
     fixed_to_top: true
-      show_search: true
-      show_theme_chooser: true
-      logo:
+    show_search: true
+    show_theme_chooser: true
+    logo:
       text: 'Zhong Lyu'
 
 # Site footer
