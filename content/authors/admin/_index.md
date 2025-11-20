@@ -135,37 +135,20 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  # --- 证书 Certificates ---
-  - title: Chartered Financial Analyst (CFA®)
-    awarder: Level I Passed
-    date: '2025-08-01'
+  - title: CFA® Level I Passed
     url: https://www.cfainstitute.org/
+    date: '2025-08-01'
+    awarder: CFA Institute
     icon: hero/academic-cap
     summary: |
-      Passed CFA® Level I. Core coverage: Financial Statement Analysis, Economics, Portfolio Management, Equity Investments, Fixed Income, Derivatives.
-  - title: Financial Risk Manager (FRM®)
-    awarder: Level I Passed
-    date: '2025-08-01'
+      Core coverage: Financial Statement Analysis, Economics, Portfolio Management, Equity Investments, Fixed Income, Derivatives.
+  - title: FRM® Level I Passed
     url: https://www.garp.org/
+    date: '2025-08-01'
+    awarder: GARP
     icon: hero/chart-bar
     summary: |
-      Passed FRM® Level I. Core coverage: Quantitative Analysis, Financial Markets and Products, Valuation and Risk Models.
-
-  # --- 原有的奖项 Awards ---
-  - title: WorldQuant Challenge
-    awarder: Gold Level
-    date: '2025-01-01'
-    url: https://www.worldquant.com
-    icon: hero/trophy
-    summary: |
-      Achieved Gold Level status in the WorldQuant International Quant Championship.
-  - title: UK Chinese University Basketball Championship
-    awarder: Runner-up
-    date: '2023-01-01'
-    url: ''
-    icon: person-simple-walk
-    summary: |
-      Runner-up in the championship.
+      Core coverage: Quantitative Analysis, Financial Markets and Products, Valuation and Risk Models.
 ---
 
 Quantitatively driven Imperial College MEng candidate and Consultant at WorldQuant with experience in systematic research and data-driven investment analysis. Passed CFA Level I and FRM Level I, with practical experience building scalable Python data pipelines, automated quality-control systems, and multi-factor analytics during a data analyst role at JLL. Skilled in Python, SQL, and statistical modelling, with a solid foundation in machine learning, financial modelling, and quantitative methods.

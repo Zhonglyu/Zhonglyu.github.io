@@ -29,4 +29,11 @@ sections:
       avatar:
         size: medium
         shape: circle
+  - block: resume-awards
+    content:
+      title: Certificates
+      username: admin
+    design:
+      css_class: section-certificates
+      view: list
 ---
