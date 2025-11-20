@@ -1,14 +1,11 @@
 ---
-title: Incremental Data Crawler
-summary: Python-based distributed crawler collecting 20k+ commercial asset datapoints with Redis-backed incremental updates and cleaning.
+title: Incremental Web Crawler
 date: 2025-01-01
 tags:
   - Python
   - Redis
-  - Web Scraping
   - Data Analysis
-image:
-  focal_point: Smart
+summary: Python-based distributed crawler collecting 20k+ commercial asset datapoints with Redis-backed incremental updates and cleaning.
 
 ---
 
