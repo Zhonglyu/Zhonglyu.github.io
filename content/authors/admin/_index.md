@@ -57,6 +57,13 @@ education:
     date_end: '2027-07-01'
     summary: |
       **Relevant Coursework:** Corporate Finance, Computational Methods, Statistics, Mathematics, Machine Learning, Fluid Mechanics, Structural Mechanics, Environmental Engineering, Project Management.
+  - area: High School Diploma
+    institution: Shenzhen International School of Education
+    icon: ""
+    date_start: '2019-08-14'
+    date_end: '2021-06-17'
+    summary: |
+      Mathematics, Physics, Further Mathematics, Economics.
 
 
 work:
