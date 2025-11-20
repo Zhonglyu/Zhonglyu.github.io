@@ -1,20 +1,13 @@
 ---
-title: Real-time Commercial Asset Data Crawler
-summary: A Python-based distributed web crawler system collecting 20,000+ data points with Redis integration for JLL.
+title: Incremental Data Crawler
+date: 2025-01-01
 tags:
   - Python
   - Redis
   - Web Scraping
   - Data Analysis
-date: 2025-01-01
-image:
-  caption: Data Pipeline
-  focal_point: Smart
+
 ---
-
-### Project Overview
-
-During my time at JLL, I developed a robust data pipeline to monitor commercial asset data in real-time.
 
 ### Key Achievements
 
