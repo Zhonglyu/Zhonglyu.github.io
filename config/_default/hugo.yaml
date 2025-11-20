@@ -6,7 +6,7 @@
 # Website name
 title: Zhong Lyu
 # Website URL
-baseURL: 'https://zhonglyu.com/'
+baseURL: 'https://example.com/'
 
 ############################
 ## LANGUAGE

@@ -53,60 +53,44 @@ education:
   - area: MEng Civil Engineering
     institution: Imperial College London
     icon: ""
-    date_start: '2021-10-01'
-    date_end: '2027-07-01'
+    date_start: 2021-10-02
+    date_end: 2027-06-25
     summary: |
-      **Relevant Coursework:** Corporate Finance, Computational Methods, Statistics, Mathematics, Machine Learning, Fluid Mechanics, Structural Mechanics, Environmental Engineering, Project Management.
+      Corporate Finance, Computational Methods, Statistics,Mathematics, MachineLearning, Fluid Mechanics,
+      StructuralMechanics, Environmental Engineering, ProjectManagement
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com/thesis.pdf'
   - area: High School Diploma
     institution: Shenzhen International School of Education
     icon: ""
-    date_start: '2019-08-14'
-    date_end: '2021-06-17'
+    date_start: 2019-08-14
+    date_end: 2021-06-17
     summary: |
-      Mathematics, Physics, Further Mathematics, Economics.
+      Mathematics, Physics, Further Mathematics, Economics
 
 
 work:
 
   - position: Consultant
     company_name: WorldQuant
-    company_url: 'https://www.worldquant.com'
+    company_url: 'https://ai.meta.com/'
     icon: ''
-    date_start: '2025-11-18'  # 请确认为实际入职日期
+    date_start: 2025-11-18
     date_end: ''
-    summary: |
-      Quantitative research and consultancy.
+    summary: ''
   - position: Data Analyst Intern
-    company_name: JLL (Jones Lang LaSalle)
-    company_url: 'https://www.jll.co.uk'
+    company_name: JLL - Technology
+    company_url: 'https://ai.meta.com/'
     icon: ''
-    date_start: '2024-12-01'
-    date_end: '2025-03-01'
-    summary: |
-      * Conducted in-depth underwriting on 34 commercial assets and 200+ tenants.
-      * Led commercial, financial, legal, and technical due diligence for asset acquisition.
-      * Authored the Annual ShenZhen Office Market Report (30+ pages).
-      * **Developed Python-based web crawlers** to collect 20,000+ data points with Redis integration for real-time monitoring.
-      * Built automated data cleaning tools, correcting over 700 data points in the company database.
-  - position: Construction Manager & Surveying Team Lead
-    company_name: Constructionarium
-    company_url: ''
-    icon: ''
-    date_start: '2024-06-01'
-    date_end: '2024-07-01'
-    summary: |
-      * Led a team of 12 to construct a footbridge from blueprint design to on-site execution.
-      * Ran technical training on total station operation and surveying workflows.
-      * Achieved the lowest error margin (<0.001%) among 11 peer groups and completed the project 14% faster than scheduled.
-  - position: Event Operations Volunteer
-    company_name: NBA International Game (ShenZhen)
-    company_url: ''
-    icon: ''
-    date_start: '2018-10-01'
-    date_end: '2019-10-01'
-    summary: |
-      * Assisted NBA operations team in on-site court surveying and precise flooring setup.
-      * Managed event logistics and liaised with team staff for successful event execution.
+    date_start: 2024-12-16
+    date_end: '2025-03-28'
+    summary: |-
+      • In-depth underwriting on 34 commercial assets, including detailed rent roll underwriting on more than 200 tenants and business plan projections on each of the downside/upside/base case scenarios
+      • Led commercial, financial, legal and technical due diligence, including detailed tenant-by-tenant lease review, floor plate and structural specification assessment, as well as company-level tax and legal analysis
+      • Over 30 pages Annual ShenZhen Office Market Report, covering a recap of the 5-year market trend as well as the firm’s 2025 house view on the office sector
+      • Developed Python-based web crawlers to collect 20,000+ data points, and implemented Redis for incremental weekly updates and real-time monitoring
+      • Developed automated programme for data cleaning / cross-checking for commercial asset monitoring; identified limitations in token-based classification and independently proposed a geo-coordinate cross verification improvement. Programme implemented on the company database (over 13,000+ datapoints, 700+ corrected)
 
 
 
@@ -155,34 +139,27 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: CFA® Level I Passed
-    url: https://www.cfainstitute.org/
-    date: '2025-08-01'
-    awarder: CFA Institute
-    icon: hero/academic-cap
-    summary: |
-      Passed the Level I CFA exam, covering Equity Investments, Fixed Income, Derivatives, and Portfolio Management.
-  - title: FRM® Level I Passed
-    url: https://www.garp.org/
-    date: '2025-08-01'
-    awarder: GARP
-    icon: hero/chart-bar
-    summary: |
-      Passed the Level I FRM exam, focusing on Quantitative Analysis, Financial Markets, and Risk Models.
-  - title: WorldQuant Challenge - Gold Level
-    url: https://www.worldquant.com
-    date: '2025-01-01'
-    awarder: WorldQuant
+  - title: Best Paper Award
+    url: https://neurips.cc/
+    date: '2022-12-01'
+    awarder: NeurIPS
     icon: hero/trophy
     summary: |
-      Achieved Gold Level status in the WorldQuant International Quant Championship.
-  - title: UK Chinese University Basketball Championship
-    url: ''
-    date: '2023-01-01'
-    awarder: UK Chinese Students Sports Federation
-    icon: person-simple-walk
+      Awarded for groundbreaking work on efficient training of large models.
+  - title: AI Innovation Grant
+    url: https://www.nsf.gov/
+    date: '2021-06-15'
+    awarder: National Science Foundation
+    icon: hero/currency-dollar
     summary: |
-      Runner-up in the championship.
+      $500,000 grant for research in ethical AI development.
+  - title: Outstanding PhD Thesis
+    url: https://www.stanford.edu/
+    date: '2019-06-30'
+    awarder: Stanford University
+    icon: hero/academic-cap
+    summary: |
+      Recognized for contributions to scaling laws in deep learning.
 ---
 
 Quantitatively driven Imperial College MEng candidate and recently new WorldQuant Consultant with strong exposure to systematic research and data-driven investment analysis. Passed CFA Level I and FRM Level I, with practical experience building scalable Python data pipelines, automated quality-control systems, and multi-factor analytics during a data analyst role at JLL. Skilled in Python, SQL, and statistical modelling, with a solid foundation in machine learning, financial modelling, and quantitative methods. Brings a rigorous analytical approach to developing research insights and supporting systematic investment and risk strategies.
