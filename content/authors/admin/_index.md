@@ -139,27 +139,34 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Best Paper Award
-    url: https://neurips.cc/
-    date: '2022-12-01'
-    awarder: NeurIPS
-    icon: hero/trophy
-    summary: |
-      Awarded for groundbreaking work on efficient training of large models.
-  - title: AI Innovation Grant
-    url: https://www.nsf.gov/
-    date: '2021-06-15'
-    awarder: National Science Foundation
-    icon: hero/currency-dollar
-    summary: |
-      $500,000 grant for research in ethical AI development.
-  - title: Outstanding PhD Thesis
-    url: https://www.stanford.edu/
-    date: '2019-06-30'
-    awarder: Stanford University
+  - title: CFA® Level I Passed
+    url: https://www.cfainstitute.org/
+    date: '2025-08-01'
+    awarder: CFA Institute
     icon: hero/academic-cap
     summary: |
-      Recognized for contributions to scaling laws in deep learning.
+      Passed the Level I CFA exam, covering Equity Investments, Fixed Income, Derivatives, and Portfolio Management.
+  - title: FRM® Level I Passed
+    url: https://www.garp.org/
+    date: '2025-08-01'
+    awarder: GARP
+    icon: hero/chart-bar
+    summary: |
+      Passed the Level I FRM exam, focusing on Quantitative Analysis, Financial Markets, and Risk Models.
+  - title: WorldQuant Challenge - Gold Level
+    url: https://www.worldquant.com
+    date: '2025-01-01'
+    awarder: WorldQuant
+    icon: hero/trophy
+    summary: |
+      Achieved Gold Level status in the WorldQuant International Quant Championship.
+  - title: UK Chinese University Basketball Championship
+    url: ''
+    date: '2023-01-01'
+    awarder: UK Chinese Students Sports Federation
+    icon: person-simple-walk
+    summary: |
+      Runner-up in the championship.
 ---
 
 Quantitatively driven Imperial College MEng candidate and recently new WorldQuant Consultant with strong exposure to systematic research and data-driven investment analysis. Passed CFA Level I and FRM Level I, with practical experience building scalable Python data pipelines, automated quality-control systems, and multi-factor analytics during a data analyst role at JLL. Skilled in Python, SQL, and statistical modelling, with a solid foundation in machine learning, financial modelling, and quantitative methods. Brings a rigorous analytical approach to developing research insights and supporting systematic investment and risk strategies.

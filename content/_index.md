@@ -31,14 +31,14 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I am an MEng candidate at **Imperial College London** and a Consultant at **WorldQuant**.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        With a strong foundation in mathematics and machine learning, I have passed **CFA Level I** and **FRM Level I**. My passion lies in applying data-driven approaches to financial markets and systematic trading strategies.
 
-        Please reach out to collaborate 😃
+        Please reach out to collaborate.
     design:
       columns: '1'
   - block: collection
