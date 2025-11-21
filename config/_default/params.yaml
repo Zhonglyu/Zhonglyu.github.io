@@ -35,7 +35,8 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: 'Zhong Lyu'
+      text: 'Zhong''s Website'
+      filename: icons/custom/personal_logo_color.svg
 
 # Site footer
 footer:
