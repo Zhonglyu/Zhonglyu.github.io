@@ -1,0 +1,70 @@
+{{/* Hugo Blox: Awards */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $author := $block.content.username | default "admin" }}
+
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+{{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your Skill block and create an associated author page if one does not already exist. See https://docs.hugoblox.com/page-builder/#about " $person_page_path }}
+{{end}}
+{{ $awards := $person_page.Params.awards }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $block.content.title | markdownify | emojify }}
+  </div>
+
+  {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+
+<div class="w-full flex flex-col gap-6">
+{{ if $awards }}
+{{ range $idx, $key := sort $awards ".date_start" "desc" }}
+<div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  {{- $icon := .icon }}
+  {{ with $icon }}
+  <div class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3">
+    {{ partial "functions/get_icon" (dict "name" $icon "attributes" "style=\"height: 100%;\"")  }}
+  </div>
+  {{ end}}
+  {{with .url}}<a href={{.}} target="_blank" rel="noopener">{{end}}
+    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{{.title | markdownify | emojify}}</h5>
+  {{with .url}}</a>{{end}}
+
+  <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+    {{.awarder}} &#8729;
+    {{ if .date}}
+      {{ (time .date) | time.Format ($block.design.date_format | default "January 2006") }}
+    {{else}}
+      {{ i18n "present" | default "Present" }}
+    {{end}}
+  </div>
+
+  {{with .summary}}
+  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose">{{. | markdownify | emojify}}</div>
+  {{end}}
+
+  {{ $award := . }}
+  {{ with $award.certificate_url }}
+  {{ $cert_text := $award.certificate_label | default (i18n "see_certificate" | default "See certificate") }}
+  {{ $href := . }}
+  {{ $scheme := (urls.Parse $href).Scheme }}
+  {{ if and (not $scheme) (ne (substr $href 0 1) "/") }}
+    {{ $href = ($href | relLangURL) }}
+  {{ end }}
+  <a href="{{ $href | safeURL }}" target="_blank" rel="noopener"
+     class="inline-flex w-fit items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
+    {{ partial "functions/get_icon" (dict "name" "document-arrow-down" "attributes" "class='w-5 h-5 mr-3'") }}
+    {{$cert_text}}
+  </a>
+  {{ end }}
+</div>
+  {{end}}
+  {{end}}
+</div>
+</div>

@@ -53,6 +53,7 @@ education:
   # --- 1. Imperial College (置顶) ---
   - institution: Imperial College London
     area: MEng Civil Engineering
+    url: https://www.imperial.ac.uk 
     icon: custom/imperial
     date_start: '2021-10-01'
     date_end: '2027-07-01'
@@ -62,6 +63,7 @@ education:
   # --- 2. CFA (第二) ---
   - institution: CFA Institute
     area: CFA® Level I Passed
+    url: https://credentials.cfainstitute.org/8a2992eb-e9ea-44a6-bd62-09b969b6266e#acc.ySZhLUis
     icon: custom/cfa
     date_start: '2025-08-01'
     date_end: ''
@@ -71,6 +73,7 @@ education:
   # --- 3. FRM (第三) ---
   - institution: GARP
     area: FRM® Level I Passed
+    url: https://my.garp.org/DigitalBadgeFRMI?id=003Po00000ngtK1IAI
     icon: custom/garp
     date_start: '2025-08-01'
     date_end: ''
@@ -80,6 +83,7 @@ education:
   # --- 4. High School (最下面) ---
   - institution: Shenzhen International School of Education
     area: High School Diploma
+    url: https://www.scie.com.cn
     icon: custom/scie
     date_start: 2019-08-14
     date_end: 2021-06-17
@@ -165,6 +169,8 @@ awards:
     date: '2025-01-01'
     url: https://www.worldquant.com
     icon: chart-bar
+    certificate_url: /uploads/worldquant-gold.pdf
+    certificate_label: Download Certificate
     summary: |
       Achieved Gold Level status in the WorldQuant International Quant Championship.
 
