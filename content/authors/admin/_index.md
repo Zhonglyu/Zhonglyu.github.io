@@ -86,7 +86,7 @@ work:
   - company_name: WorldQuant
     position: Consultant
     company_url: 'https://www.worldquant.com'
-    icon: ''
+    icon: custom/wqbrain
     date_start: 2025-11-18
     date_end: ''
     summary: |
@@ -94,7 +94,7 @@ work:
   - company_name: JLL (Jones Lang LaSalle)
     position: Data Analyst Intern
     company_url: 'https://www.jll.co.uk/'
-    icon: ''
+    icon: custom/jll
     date_start: '2024-12-01'
     date_end: '2025-03-01'
     summary: |
@@ -116,7 +116,7 @@ work:
   - company_name: NBA International Game (ShenZhen)
     position: Event Operations Volunteer
     company_url: ''
-    icon: ''
+    icon: custom/nba
     date_start: '2018-10-01'
     date_end: '2019-10-01'
     summary: |
@@ -158,7 +158,7 @@ awards:
     awarder: Gold Level
     date: '2025-01-01'
     url: https://www.worldquant.com
-    icon: hero/trophy
+    icon: custom/wqbrain
     summary: |
       Achieved Gold Level status in the WorldQuant International Quant Championship.
 
@@ -166,7 +166,7 @@ awards:
     awarder: Runner-up
     date: '2023-01-01'
     url: ''
-    icon: custom/nba
+    icon: hero/trophy
     summary: |
       Runner-up in the championship; Champion of 2022 South Cup.
 ---
