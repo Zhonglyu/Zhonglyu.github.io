@@ -43,23 +43,7 @@ profiles:
 
 
 
-interests: 
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: cpu-chip
-      - name: Data Mining
-        description: ''
-        percent: 100
-        icon: circle-stack
-      - name: Strength Training
-        description: ''
-        percent: 100
-        icon: bolt
-      - name: Basketball
-        description: ''
-        percent: 100
-        icon: nba
+interests: []
 
 education:
   # --- 1. Imperial College (置顶) ---
@@ -145,6 +129,22 @@ work:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
+skills:
+  - name: Technical Skills
+    items:
+      - name: Python & PyTorch
+        description: ''
+        percent: 95
+        icon: code-bracket
+      - name: Machine Learning
+        description: ''
+        percent: 100
+        icon: chart-bar
+      - name: Cloud Computing (AWS/GCP)
+        description: ''
+        percent: 85
+        icon: cloud
+
 languages:
   - name: English
     percent: 75
@@ -160,7 +160,7 @@ awards:
     awarder: Gold Level
     date: '2025-01-01'
     url: https://www.worldquant.com
-    icon: custom/wqbrain
+    icon: hero/trophy
     summary: |
       Achieved Gold Level status in the WorldQuant International Quant Championship.
 
@@ -168,7 +168,7 @@ awards:
     awarder: Runner-up
     date: '2023-01-01'
     url: ''
-    icon: hero/trophy  # 使用自定义 NBA 图标
+    icon: custom/nba  # 使用自定义 NBA 图标
     summary: |
       Runner-up in the championship; Champion of 2022 South Cup.
 ---
