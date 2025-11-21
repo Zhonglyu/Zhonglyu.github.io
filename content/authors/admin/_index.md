@@ -144,6 +144,26 @@ skills:
         description: ''
         percent: 85
         icon: cloud
+  - name: Interests
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Machine Learning
+        description: ''
+        percent: 100
+        icon: cpu-chip
+      - name: Data Mining
+        description: ''
+        percent: 100
+        icon: circle-stack
+      - name: Strength Training
+        description: ''
+        percent: 100
+        icon: bolt
+      - name: Basketball
+        description: ''
+        percent: 100
+        icon: nba
 
 languages:
   - name: English
@@ -160,7 +180,7 @@ awards:
     awarder: Gold Level
     date: '2025-01-01'
     url: https://www.worldquant.com
-    icon: hero/trophy
+    icon: custom/wqbrain
     summary: |
       Achieved Gold Level status in the WorldQuant International Quant Championship.
 
@@ -168,7 +188,7 @@ awards:
     awarder: Runner-up
     date: '2023-01-01'
     url: ''
-    icon: custom/nba  # 使用自定义 NBA 图标
+    icon: hero/trophy  # 使用自定义 NBA 图标
     summary: |
       Runner-up in the championship; Champion of 2022 South Cup.
 ---

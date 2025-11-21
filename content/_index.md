@@ -29,11 +29,12 @@ sections:
       avatar:
         size: medium
         shape: circle
-  - block: resume-awards
+
+  # --- 新增：Interests 板块 (替代了原来的 Certificates) ---
+  - block: resume-skills
     content:
-      title: Certificates
+      title: Interests
       username: admin
     design:
-      css_class: section-certificates
-      view: list
+      show_skill_percentage: false  # 隐藏进度条，只显示图标和文字
 ---
