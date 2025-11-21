@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Student At Imperial College London
+role: A Humble Learner
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -77,7 +77,7 @@ certificates:
     icon: custom/cfa
     progress: "Level I"
     summary: |
-      Coverage: Financial Statement Analysis, Economics, Portfolio Management, Equity Investments, Fixed Income, Derivatives.
+      Coverage: Financial Statement Analysis, Portfolio Management, Equity, Fixed Income, Derivatives.
   - name: FRM®
     issuer: GARP
     url: https://my.garp.org/DigitalBadgeFRMI?id=003Po00000ngtK1IAI

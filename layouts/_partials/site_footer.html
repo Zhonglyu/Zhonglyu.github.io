@@ -1,6 +1,12 @@
 {{/* Override footer to remove HugoBlox credits bar */}}
-<footer class="print:hidden">
-  <div class="max-w-7xl mx-auto px-4 py-10">
-    {{ partial "site_footer_license.html" . }}
+{{ if .IsHome }}
+  <div class="w-full hbx-bg-gradient text-center text-sm text-white/80 py-6 print:hidden">
+    {{ with site.Params.footer.copyright.notice }}{{ . | safeHTML }}{{ else }}© {{ now.Format "2006" }} {{ site.Title }}{{ end }}
   </div>
-</footer>
+{{ else }}
+  <footer class="print:hidden">
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      {{ partial "site_footer_license.html" . }}
+    </div>
+  </footer>
+{{ end }}

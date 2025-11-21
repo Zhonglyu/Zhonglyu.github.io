@@ -28,3 +28,28 @@
 .hb-animate-cursor {
   animation: hb-type-cursor 1.4s steps(1,end) infinite;
 }
+
+/* Upcoming Publications pill in navbar (non-clickable) */
+.navbar-nav a[href="#publications-upcoming"] {
+  pointer-events: none;
+  position: relative;
+}
+
+.navbar-nav a[href="#publications-upcoming"]::after {
+  content: "Upcoming";
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 9999px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  animation: upcoming-pulse 1.3s ease-in-out infinite;
+  vertical-align: middle;
+}
+
+@keyframes upcoming-pulse {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-1px); opacity: 0.65; }
+}

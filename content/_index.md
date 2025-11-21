@@ -14,7 +14,7 @@ sections:
       text: |
         I am an MEng candidate at Imperial College London and a Consultant at WorldQuant.
 
-        With a strong foundation in mathematics and machine learning, I have passed CFA Level I and FRM Level I. My passion lies in applying data-driven approaches to financial markets and systematic trading strategies.
+        I have a strong foundation in mathematics and machine learning and have passed both CFA Level I and FRM Level I. My passion lies in applying data-driven approaches to financial markets and systematic trading strategies.
 
         Please reach out to collaborate.
       typewriter:
