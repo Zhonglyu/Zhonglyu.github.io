@@ -21,8 +21,8 @@ sections:
         text: Download CV
         url: uploads/resume.pdf
       headings:
-        about: ''
-        education: ''
+        about: 'Biography'
+        education: 'Education & Qualifications'
         interests: ''
     design:
       css_class: hbx-bg-gradient
