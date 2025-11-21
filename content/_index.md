@@ -17,6 +17,15 @@ sections:
         With a strong foundation in mathematics and machine learning, I have passed CFA Level I and FRM Level I. My passion lies in applying data-driven approaches to financial markets and systematic trading strategies.
 
         Please reach out to collaborate.
+      typewriter:
+        static_text: 'Curiosity empowering '
+        words:
+          - Finance.
+          - Data Science.
+          - Engineering.
+        typing_speed: 100
+        deleting_speed: 50
+        pause_delay: 2000
       button:
         text: Download CV
         url: uploads/resume.pdf

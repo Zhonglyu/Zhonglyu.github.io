@@ -29,6 +29,12 @@
 {{/* Shape class mappings */}}
 {{ $shape_classes := dict "circle" "rounded-full" "square" "rounded-none" "rounded" "rounded-lg" }}
 {{ $shape_class := index $shape_classes $avatar_shape | default "rounded-full" }}
+{{ $typewriter_config := $block.content.typewriter | default dict }}
+{{ $typewriter_words := $typewriter_config.words | default (slice "Finance" "Data Science" "Engineering") }}
+{{ $typewriter_static := $typewriter_config.static_text | default "Curiosity empowering " }}
+{{ $typing_speed := $typewriter_config.typing_speed | default 100 }}
+{{ $deleting_speed := $typewriter_config.deleting_speed | default 50 }}
+{{ $pause_delay := $typewriter_config.pause_delay | default 2000 }}
 
 <div class="resume-biography py-8 px-4 sm:py-12 md:py-16 lg:py-24 xl:py-32 relative overflow-hidden">
   {{/* Add subtle top gradient for navbar transition */}}
@@ -142,8 +148,7 @@
       {{/* Right Column: Flexible span */}}
       <div class="md:col-span-8">
         
-        {{/* Bio Section */}}
-        {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
+        {{/* Bio Section with typewriter animation */}}
         <div class="mb-12">
           <div class="flex items-center gap-4 mb-8">
             <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
@@ -154,13 +159,31 @@
             {{ $about_heading := $block.content.headings.about | default $about_default }}
             <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $about_heading }}</h2>
           </div>
-          <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed">
-            <div class="bio-text" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
-              {{ . }}
+          <div 
+            class="rounded-2xl bg-gradient-to-br from-white/80 via-primary-50/60 to-primary-100/60 dark:from-gray-800/80 dark:via-primary-950/60 dark:to-primary-900/40 border border-primary-100/60 dark:border-primary-900/40 shadow-lg px-6 py-8 sm:px-8 sm:py-10"
+            data-typewriter
+            data-words='{{ $typewriter_words | jsonify | safeHTMLAttr }}'
+            data-typing-speed="{{ $typing_speed }}"
+            data-deleting-speed="{{ $deleting_speed }}"
+            data-pause-delay="{{ $pause_delay }}">
+            <div class="min-h-[120px] mb-4 sm:mb-6">
+              <div class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white">
+                <span>{{ $typewriter_static }}</span>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-secondary-600 to-indigo-600 dark:from-primary-400 dark:via-secondary-400 dark:to-indigo-300" data-typewriter-text></span>
+                <span class="inline-block w-1 h-10 md:h-14 ml-1 bg-primary-600 animate-cursor align-middle mb-2" aria-hidden="true"></span>
+              </div>
             </div>
+            {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
+            <noscript>
+              <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed">
+                <div class="bio-text" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+                  {{ . }}
+                </div>
+              </div>
+            </noscript>
+            {{ end }}
           </div>
         </div>
-        {{ end }}
 
         {{/* CV Download Button */}}
         {{ with $block.content.button }}
@@ -236,3 +259,63 @@
     </div>
   </div>
 </div>
+<script>
+(() => {
+  const blocks = document.querySelectorAll('[data-typewriter]');
+  if (!blocks.length) return;
+
+  blocks.forEach((block) => {
+    const target = block.querySelector('[data-typewriter-text]');
+    if (!target) return;
+
+    let words;
+    try {
+      words = JSON.parse(block.getAttribute('data-words') || '[]');
+    } catch (e) {
+      words = [];
+    }
+
+    if (!Array.isArray(words) || !words.length) return;
+
+    const typingSpeed = Number(block.getAttribute('data-typing-speed')) || 100;
+    const deletingSpeed = Number(block.getAttribute('data-deleting-speed')) || 50;
+    const pauseDelay = Number(block.getAttribute('data-pause-delay')) || 2000;
+
+    let text = '';
+    let wordIndex = 0;
+    let isDeleting = false;
+
+    const tick = () => {
+      const currentWord = words[wordIndex % words.length];
+
+      if (!isDeleting && text.length < currentWord.length) {
+        text = currentWord.substring(0, text.length + 1);
+        target.textContent = text;
+        window.setTimeout(tick, typingSpeed);
+        return;
+      }
+
+      if (!isDeleting && text.length === currentWord.length) {
+        window.setTimeout(() => {
+          isDeleting = true;
+          tick();
+        }, pauseDelay);
+        return;
+      }
+
+      if (isDeleting && text.length > 0) {
+        text = currentWord.substring(0, text.length - 1);
+        target.textContent = text;
+        window.setTimeout(tick, deletingSpeed);
+        return;
+      }
+
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      window.setTimeout(tick, 200);
+    };
+
+    tick();
+  });
+})();
+</script>

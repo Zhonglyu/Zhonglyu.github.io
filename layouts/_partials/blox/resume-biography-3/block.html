@@ -29,10 +29,31 @@
 {{/* Shape class mappings */}}
 {{ $shape_classes := dict "circle" "rounded-full" "square" "rounded-none" "rounded" "rounded-lg" }}
 {{ $shape_class := index $shape_classes $avatar_shape | default "rounded-full" }}
+{{ $typewriter_config := $block.content.typewriter | default dict }}
+{{ $typewriter_words := $typewriter_config.words | default (slice "Finance" "Data Science" "Engineering") }}
+{{ $typewriter_static := $typewriter_config.static_text | default "Curiosity empowering " }}
+{{ $typing_speed := $typewriter_config.typing_speed | default 100 }}
+{{ $deleting_speed := $typewriter_config.deleting_speed | default 50 }}
+{{ $pause_delay := $typewriter_config.pause_delay | default 2000 }}
+{{ $show_typewriter := gt (len $typewriter_words) 0 }}
 
-<div class="resume-biography py-8 px-4 sm:py-12 md:py-16 lg:py-24 xl:py-32 relative overflow-hidden">
+<div class="resume-biography px-4 pt-0 sm:pt-1 md:pt-2 lg:pt-3 xl:pt-4 pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-28 relative overflow-visible">
   {{/* Add subtle top gradient for navbar transition */}}
   <div class="max-w-7xl mx-auto">
+    {{ if $show_typewriter }}
+    <div class="-mt-6 sm:-mt-8 md:-mt-9 lg:-mt-10 xl:-mt-12 mb-16 md:mb-20 flex items-center justify-center text-center">
+      <div class="text-4xl md:text-5xl lg:text-6xl font-['SF_Pro_Rounded','Nunito','-apple-system','BlinkMacSystemFont','Segoe_UI','Roboto','Helvetica','Arial','sans-serif'] font-semibold leading-tight tracking-wide text-slate-900 dark:text-white drop-shadow-sm"
+           data-typewriter
+           data-words='{{ $typewriter_words | jsonify | safeHTMLAttr }}'
+           data-typing-speed="{{ $typing_speed }}"
+           data-deleting-speed="{{ $deleting_speed }}"
+           data-pause-delay="{{ $pause_delay }}">
+        <span>{{ $typewriter_static }}</span>
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-400 via-purple-500 to-indigo-500 dark:from-primary-300 dark:via-purple-400 dark:to-indigo-300" data-typewriter-text></span>
+        <span class="inline-block w-1 h-10 md:h-12 ml-1 bg-slate-900 dark:bg-white hb-animate-cursor align-middle mb-1" aria-hidden="true" style="animation: hb-type-cursor 1.4s steps(1,end) infinite;"></span>
+      </div>
+    </div>
+    {{ end }}
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
       
       {{/* Left Column: Flexible span */}}
@@ -236,3 +257,77 @@
     </div>
   </div>
 </div>
+<script>
+(() => {
+  const blocks = document.querySelectorAll('[data-typewriter]');
+  if (!blocks.length) return;
+
+  blocks.forEach((block) => {
+    const target = block.querySelector('[data-typewriter-text]');
+    if (!target) return;
+
+    let words;
+    try {
+      words = JSON.parse(block.getAttribute('data-words') || '[]');
+    } catch {
+      words = [];
+    }
+
+    if (!Array.isArray(words) || !words.length) return;
+
+    const typingSpeed = Number(block.getAttribute('data-typing-speed')) || 100;
+    const deletingSpeed = Number(block.getAttribute('data-deleting-speed')) || 50;
+    const pauseDelay = Number(block.getAttribute('data-pause-delay')) || 2000;
+
+    let text = '';
+    let wordIndex = 0;
+    let isDeleting = false;
+
+    const tick = () => {
+      const currentWord = words[wordIndex % words.length];
+      const render = () => {
+        target.textContent = text || '';
+      };
+
+      if (!isDeleting && text.length < currentWord.length) {
+        text = currentWord.substring(0, text.length + 1);
+        render();
+        window.setTimeout(tick, typingSpeed);
+        return;
+      }
+
+      if (!isDeleting && text.length === currentWord.length) {
+        window.setTimeout(() => {
+          isDeleting = true;
+          render();
+          tick();
+        }, pauseDelay);
+        return;
+      }
+
+      if (isDeleting && text.length > 0) {
+        text = currentWord.substring(0, text.length - 1);
+        render();
+        window.setTimeout(tick, deletingSpeed);
+        return;
+      }
+
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      window.setTimeout(tick, 200);
+    };
+
+    target.textContent = '';
+    tick();
+  });
+})();
+</script>
+<style>
+@keyframes hb-type-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.hb-animate-cursor {
+  animation: hb-type-cursor 1.4s steps(1,end) infinite;
+}
+</style>

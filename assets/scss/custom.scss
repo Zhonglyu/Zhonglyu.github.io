@@ -10,6 +10,16 @@
   display: none !important;
 }
 
+/* Cursor blink for the typewriter title */
+@keyframes cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-cursor {
+  animation: cursor .75s step-end infinite;
+}
+
 /* Optional: Add some breathing room at the bottom */
 footer {
   padding-bottom: 2rem;
