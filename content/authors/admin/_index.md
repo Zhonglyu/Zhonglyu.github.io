@@ -49,7 +49,7 @@ education:
   # --- 学历 ---
   - institution: Imperial College London
     area: MEng Civil Engineering
-    icon: imperial
+    icon: custom/imperial
     date_start: '2021-10-01'
     date_end: '2027-07-01'
     summary: |
@@ -57,7 +57,7 @@ education:
 
   - institution: Shenzhen International School of Education
     area: High School Diploma
-    icon: scie
+    icon: custom/scie
     date_start: 2019-08-14
     date_end: 2021-06-17
     summary: |
@@ -66,7 +66,7 @@ education:
   # --- 证书 (并入此处以获得统一的排版) ---
   - institution: CFA Institute
     area: CFA® Level I Passed
-    icon: cfa
+    icon: custom/cfa
     date_start: '2025-08-01'
     date_end: ''
     summary: |
@@ -74,7 +74,7 @@ education:
 
   - institution: GARP
     area: FRM® Level I Passed
-    icon: garp
+    icon: custom/garp
     date_start: '2025-08-01'
     date_end: ''
     summary: |
@@ -166,7 +166,7 @@ awards:
     awarder: Runner-up
     date: '2023-01-01'
     url: ''
-    icon: nba
+    icon: custom/nba
     summary: |
       Runner-up in the championship; Champion of 2022 South Cup.
 ---
