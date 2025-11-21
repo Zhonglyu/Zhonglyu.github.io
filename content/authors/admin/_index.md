@@ -163,7 +163,7 @@ skills:
       - name: Basketball
         description: ''
         percent: 100
-        icon: nba
+        icon: custom/nba
 
 languages:
   - name: English
