@@ -46,7 +46,7 @@ profiles:
 interests: []
 
 education:
-  # --- 学历 ---
+  # --- 1. Imperial College (置顶) ---
   - institution: Imperial College London
     area: MEng Civil Engineering
     icon: custom/imperial
@@ -55,15 +55,7 @@ education:
     summary: |
       Relevant coursework: Corporate Finance, Computational Methods, Statistics, Mathematics, Machine Learning, Fluid Mechanics, Structural Mechanics, Environmental Engineering, Project Management.
 
-  - institution: Shenzhen International School of Education
-    area: High School Diploma
-    icon: custom/scie
-    date_start: 2019-08-14
-    date_end: 2021-06-17
-    summary: |
-      Mathematics, Physics, Further Mathematics, Economics
-
-  # --- 证书 (并入此处以获得统一的排版) ---
+  # --- 2. CFA (第二) ---
   - institution: CFA Institute
     area: CFA® Level I Passed
     icon: custom/cfa
@@ -71,7 +63,8 @@ education:
     date_end: ''
     summary: |
       Core coverage: Financial Statement Analysis, Economics, Portfolio Management, Equity Investments, Fixed Income, Derivatives.
-
+  
+  # --- 3. FRM (第三) ---
   - institution: GARP
     area: FRM® Level I Passed
     icon: custom/garp
@@ -79,6 +72,15 @@ education:
     date_end: ''
     summary: |
       Core coverage: Quantitative Analysis, Financial Markets and Products, Valuation and Risk Models.
+
+  # --- 4. High School (最下面) ---
+  - institution: Shenzhen International School of Education
+    area: High School Diploma
+    icon: custom/scie
+    date_start: 2019-08-14
+    date_end: 2021-06-17
+    summary: |
+      Mathematics, Physics, Further Mathematics, Economics
 
 
 work:
@@ -158,7 +160,7 @@ awards:
     awarder: Gold Level
     date: '2025-01-01'
     url: https://www.worldquant.com
-    icon: custom/wqbrain
+    icon: hero/trophy
     summary: |
       Achieved Gold Level status in the WorldQuant International Quant Championship.
 
@@ -166,7 +168,7 @@ awards:
     awarder: Runner-up
     date: '2023-01-01'
     url: ''
-    icon: hero/trophy
+    icon: custom/nba  # 使用自定义 NBA 图标
     summary: |
       Runner-up in the championship; Champion of 2022 South Cup.
 ---
