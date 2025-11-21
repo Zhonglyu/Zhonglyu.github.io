@@ -41,7 +41,7 @@
   {{/* Add subtle top gradient for navbar transition */}}
   <div class="max-w-7xl mx-auto">
     {{ if $show_typewriter }}
-    <div class="-mt-6 sm:-mt-8 md:-mt-9 lg:-mt-10 xl:-mt-12 mb-16 md:mb-20 flex items-center justify-center text-center">
+    <div class="-mt-16 sm:-mt-15 md:-mt-14 lg:-mt-13 xl:-mt-12 mb-16 md:mb-20 flex items-center justify-center text-center">
       <div class="text-4xl md:text-5xl lg:text-6xl font-['SF_Pro_Rounded','Nunito','-apple-system','BlinkMacSystemFont','Segoe_UI','Roboto','Helvetica','Arial','sans-serif'] font-semibold leading-tight tracking-wide text-slate-900 dark:text-white drop-shadow-sm"
            data-typewriter
            data-words='{{ $typewriter_words | jsonify | safeHTMLAttr }}'
@@ -224,6 +224,45 @@
                   <p class="text-gray-600 dark:text-gray-400 font-medium mt-1">{{ .institution }}</p>
                 </div>
               </div>
+            </div>
+            {{ if $link }}</a>{{ end }}
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        {{/* Certificates Section */}}
+        {{ with $person.certificates }}
+        <div class="mb-16">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
+              {{ partial "functions/get_icon" (dict "name" "shield-check" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
+            </div>
+            {{ $cert_heading := $block.content.headings.certificates | default "Certificates" }}
+            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $cert_heading | markdownify }}</h3>
+          </div>
+          <div class="grid grid-cols-1 gap-6">
+            {{ range . }}
+            {{ $link := .url | default .link }}
+            {{ if $link }}<a href="{{ $link }}" target="_blank" rel="noopener" class="no-underline group block">{{ end }}
+            <div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-md">
+                  {{ partial "functions/get_icon" (dict "name" (or .icon "shield-check") "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
+                </div>
+                <div class="flex-1 flex-grow">
+                  <p class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                    {{ .name }}
+                  </p>
+                  <p class="text-gray-600 dark:text-gray-400 font-medium mt-1">{{ .issuer }}</p>
+                  {{ with .progress }}
+                  <p class="text-sm text-primary-700 dark:text-primary-300 font-semibold mt-2">Progress: {{ . }}</p>
+                  {{ end }}
+                </div>
+              </div>
+              {{ with .summary }}
+              <p class="text-gray-700 dark:text-gray-300 mt-3">{{ . | markdownify }}</p>
+              {{ end }}
             </div>
             {{ if $link }}</a>{{ end }}
             {{ end }}

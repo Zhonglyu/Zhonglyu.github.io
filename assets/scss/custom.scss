@@ -20,12 +20,11 @@
   animation: cursor .75s step-end infinite;
 }
 
-/* Optional: Add some breathing room at the bottom */
-footer {
-  padding-bottom: 2rem;
+@keyframes hb-type-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-/* Hide the 'Made with Hugo Blox' footer text */
-.powered-by {
-  display: none !important;
+.hb-animate-cursor {
+  animation: hb-type-cursor 1.4s steps(1,end) infinite;
 }

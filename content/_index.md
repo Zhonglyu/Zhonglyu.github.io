@@ -31,7 +31,8 @@ sections:
         url: uploads/resume.pdf
       headings:
         about: 'Biography'
-        education: 'Education & Qualifications'
+        education: 'Education'
+        certificates: 'Certificates'
         interests: ''
     design:
       css_class: hbx-bg-gradient

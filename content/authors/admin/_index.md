@@ -60,27 +60,7 @@ education:
     summary: |
       Relevant coursework: Corporate Finance, Computational Methods, Statistics, Mathematics, Machine Learning, Fluid Mechanics, Structural Mechanics, Environmental Engineering, Project Management.
 
-  # --- 2. CFA (第二) ---
-  - institution: CFA Institute
-    area: CFA® Level I Passed
-    url: https://credentials.cfainstitute.org/8a2992eb-e9ea-44a6-bd62-09b969b6266e#acc.ySZhLUis
-    icon: custom/cfa
-    date_start: '2025-08-01'
-    date_end: ''
-    summary: |
-      Core coverage: Financial Statement Analysis, Economics, Portfolio Management, Equity Investments, Fixed Income, Derivatives.
-  
-  # --- 3. FRM (第三) ---
-  - institution: GARP
-    area: FRM® Level I Passed
-    url: https://my.garp.org/DigitalBadgeFRMI?id=003Po00000ngtK1IAI
-    icon: custom/garp
-    date_start: '2025-08-01'
-    date_end: ''
-    summary: |
-      Core coverage: Quantitative Analysis, Financial Markets and Products, Valuation and Risk Models.
-
-  # --- 4. High School (最下面) ---
+  # --- 2. High School (最下面) ---
   - institution: Shenzhen International School of Education
     area: High School Diploma
     url: https://www.scie.com.cn
@@ -89,6 +69,22 @@ education:
     date_end: 2021-06-17
     summary: |
       Mathematics, Physics, Further Mathematics, Economics
+
+certificates:
+  - name: CFA®
+    issuer: CFA Institute
+    url: https://credentials.cfainstitute.org/8a2992eb-e9ea-44a6-bd62-09b969b6266e#acc.ySZhLUis
+    icon: custom/cfa
+    progress: "Level I"
+    summary: |
+      Coverage: Financial Statement Analysis, Economics, Portfolio Management, Equity Investments, Fixed Income, Derivatives.
+  - name: FRM®
+    issuer: GARP
+    url: https://my.garp.org/DigitalBadgeFRMI?id=003Po00000ngtK1IAI
+    icon: custom/garp
+    progress: "Level I"
+    summary: |
+      Coverage: Quantitative Analysis, Financial Markets and Products, Valuation and Risk Models.
 
 
 work:
