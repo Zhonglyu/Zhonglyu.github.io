@@ -43,7 +43,23 @@ profiles:
 
 
 
-interests: []
+interests: 
+      - name: Machine Learning
+        description: ''
+        percent: 100
+        icon: cpu-chip
+      - name: Data Mining
+        description: ''
+        percent: 100
+        icon: circle-stack
+      - name: Strength Training
+        description: ''
+        percent: 100
+        icon: bolt
+      - name: Basketball
+        description: ''
+        percent: 100
+        icon: nba
 
 education:
   # --- 1. Imperial College (置顶) ---
@@ -129,42 +145,6 @@ work:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python & PyTorch
-        description: ''
-        percent: 95
-        icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
-        description: ''
-        percent: 85
-        icon: cloud
-  - name: Interests
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: cpu-chip
-      - name: Data Mining
-        description: ''
-        percent: 100
-        icon: circle-stack
-      - name: Strength Training
-        description: ''
-        percent: 100
-        icon: bolt
-      - name: Basketball
-        description: ''
-        percent: 100
-        icon: custom/nba
-
 languages:
   - name: English
     percent: 75
