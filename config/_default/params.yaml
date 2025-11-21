@@ -35,7 +35,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: 'Zhong''s Website'
+      text: 'Zhong''s'
       filename: icons/custom/personal_logo_color.svg
 
 # Site footer

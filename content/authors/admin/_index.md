@@ -10,7 +10,7 @@ first_name: Zhong
 last_name: Lyu
 
 # Pronouns (optional)
-pronouns: he/him
+pronouns: 
 
 # Status emoji
 status:
@@ -43,7 +43,11 @@ profiles:
 
 
 
-interests: []
+interests:
+  - Machine Learning
+  - Deep Learning
+  - Data Mining
+  - Strength Training
 
 education:
   # --- 1. Imperial College (置顶) ---
@@ -160,7 +164,7 @@ awards:
     awarder: Gold Level
     date: '2025-01-01'
     url: https://www.worldquant.com
-    icon: hero/trophy
+    icon: chart-bar
     summary: |
       Achieved Gold Level status in the WorldQuant International Quant Championship.
 
@@ -168,7 +172,7 @@ awards:
     awarder: Runner-up
     date: '2023-01-01'
     url: ''
-    icon: custom/nba  # 使用自定义 NBA 图标
+    icon: hero/trophy  # 使用自定义 NBA 图标
     summary: |
       Runner-up in the championship; Champion of 2022 South Cup.
 ---
